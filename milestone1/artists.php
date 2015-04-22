@@ -41,7 +41,7 @@ foreach ($dbh->query($sql) as $row){
 </form>
 
 
-
+$dbh = null;
 
 
 </body>
