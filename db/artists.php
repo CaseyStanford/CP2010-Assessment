@@ -14,14 +14,23 @@ include("dbconnect.php");
 </head>
 <body>
 <h2>Current Data</h2>
+
+
+<!-- Displays a list of records in a table
+// TODO Need to add a default image Directory and a Default image
+// TODO - 'More details' for artists.
+// Create the link when populating the list
+// End of week6 lecture - Need to check that.
+-->
 <?php
 $sql = "SELECT * FROM artist_details";
 
-foreach ($dbh->query($sql) as $row){
 ?>
 <table id="artist_details">
+    <tr><td>Name</td><td>Genre</td><td>Details</td><td>Artist Picture</td></tr>
     <?php
-    echo "<tr><td>$row[name]</td><td>$row[description]</td><td>$row[genre]</td><td>$row[images]</td></tr>";
+    foreach ($dbh->query($sql) as $row){
+    echo "<tr><td>$row[name]</td><td>$row[genre]</td><td><a href=\"artist_details.php?id=$row[artist_id]\">More Details</a> </td><td><img src=\"/res/images/$row[images].jpg\"></td></tr>";
 }
     ?>
 </table>
@@ -39,11 +48,9 @@ foreach ($dbh->query($sql) as $row){
         <p><input type="submit" name="submit" value="Insert Entry"></p>
     </fieldset>
 </form>
-
-
+<?php
 $dbh = null;
-
-
+?>
 </body>
 </html>
 
