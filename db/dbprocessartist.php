@@ -35,7 +35,7 @@ else {
 	echo "This page did not come from a valid form submission.<br/>\n";
 }
 echo "</strong></p>\n";
-echo "<a href=\db\artists.php >Return to Artists Page</a>";
+echo "<a href=artists.php >Return to Artists Page</a>";
 
 $dbh = null;
 ?>
