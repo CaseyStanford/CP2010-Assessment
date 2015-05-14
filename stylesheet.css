@@ -101,7 +101,7 @@ header img {
 
 
 #topbuttons a:hover {
-    background-color: #373385;
+    background-color: darkseagreen;
     font-size: 22px;  
 }
 #event {
@@ -171,8 +171,11 @@ header img {
 #allevents li{
     background-color: whitesmoke;
     margin-top: 3px;
+    padding: 5px;   
+    font-family: "crimson-text";
     list-style: none;
     float: right;
+    color: darkgray;
 }
 
 #allevents img {
@@ -180,14 +183,39 @@ header img {
 }
 
 #firstpost, #secondpost, #thirdpost, #fourthpost {
-    height: 400px;
-    width: 353px;
+    height: 430px;
+    width: 344px;
     margin-left: 8px;
+    margin-top: 5px;
     float: left;
     background-color: whitesmoke;
+    font-family: "crimson-text";
+    color: darkgray;
+    padding: 5px;
 }
 
 #firstpost h1, #secondpost h1, #thirdpost h1, #fourthpost h1 {
- font-size: 20px;
- font-family: arial;
+ font-size: 15px;
+ font-family: "crimson-text";;
+}
+
+
+#contact {
+    margin: auto;
+    height: 900px;
+    width: 500px;
+    background-color: whitesmoke;
+    color: darkgray;
+    font-family: "crimson-text";
+    
+
+}
+#contact h1 {
+    margin-top: -5px;
+    font-size: 20px;
+    
+}
+#contact img {
+
+    
 }
