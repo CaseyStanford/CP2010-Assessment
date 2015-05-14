@@ -178,3 +178,16 @@ header img {
 #allevents img {
     float: left;
 }
+
+#firstpost, #secondpost, #thirdpost, #fourthpost {
+    height: 400px;
+    width: 353px;
+    margin-left: 8px;
+    float: left;
+    background-color: whitesmoke;
+}
+
+#firstpost h1, #secondpost h1, #thirdpost h1, #fourthpost h1 {
+ font-size: 20px;
+ font-family: arial;
+}
